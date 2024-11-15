@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Historique des Taux de Change</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Rechercher des Taux Historiques</h1>
+    <form id="currencyForm">
+        <label for="baseCurrency">Devise de base :</label>
+        <input type="text" id="baseCurrency" placeholder="ex: USD">
+        
+        <label for="targetCurrency">Devise cible :</label>
+        <input type="text" id="targetCurrency" placeholder="ex: EUR">
+        
+        <label for="date">Date :</label>
+        <input type="date" id="date">
+        
+        <label for="amount">Montant :</label>
+        <input type="number" id="amount" placeholder="ex: 100">
+        
+        <button type="button" onclick="fetchData()">Obtenir les Taux</button>
+    </form>
+
+    <div id="results"></div>
+</body>
+</html>
